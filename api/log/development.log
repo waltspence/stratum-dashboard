@@ -66,3 +66,76 @@ Processing by Api::V1::HealthController#index as */*
 Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/v1/audits" for 127.0.0.1 at 2026-05-28 03:53:08 -0400
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:53:08 -0400
+Started GET "/api/v1/health" for 127.0.0.1 at 2026-05-28 03:53:08 -0400
+Processing by Api::V1::HealthController#index as */*
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::AuditsController#index as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2026-05-28 03:53:08 -0400
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2026-05-28 03:53:08 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Started GET "/api/v1/audits" for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Started GET "/api/v1/health" for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Processing by Api::V1::HealthController#index as */*
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Processing by Api::V1::AuditsController#index as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2026-05-28 03:53:14 -0400
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/api/v1/agents" for ::1 at 2026-05-28 03:54:37 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2026-05-28 03:56:13 -0400
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:56:13 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:56:15 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:57:04 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:57:05 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:57:40 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 03:57:44 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
