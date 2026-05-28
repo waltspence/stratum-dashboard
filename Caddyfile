@@ -1,0 +1,11 @@
+stratum.enlab.dev {
+	handle /api/* {
+		reverse_proxy 127.0.0.1:3002
+	}
+	handle /cable {
+		reverse_proxy 127.0.0.1:3002
+	}
+	handle {
+		reverse_proxy 127.0.0.1:3002
+	}
+}

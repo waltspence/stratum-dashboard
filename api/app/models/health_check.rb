@@ -1,0 +1,2 @@
+class HealthCheck < ApplicationRecord
+end
