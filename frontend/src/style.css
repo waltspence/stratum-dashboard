@@ -61,6 +61,18 @@ body {
 .main-panel {
   padding: 20px;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-content: flex-start;
+}
+.main-panel > .panel {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 320px;
+  max-width: 100%;
+}
+.panel-full {
+  flex: 1 1 100%;
 }
 
 .panel {
@@ -68,6 +80,16 @@ body {
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 16px;
+  min-height: 0;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 160px;
+}
+.chart-wrap-sm {
+  position: relative;
+  height: 120px;
 }
 
 .panel-header {
@@ -95,3 +117,26 @@ body {
 .status-active { color: var(--green); }
 .status-idle { color: var(--text-dim); }
 .status-error { color: var(--red); }
+
+.event-row {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-dim);
+  font-size: 10px;
+  align-items: center;
+}
+.event-time { color: var(--text-dim); min-width: 40px; }
+
+.finding-row {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-dim);
+  font-size: 10px;
+  gap: 8px;
+}
+.finding-severity { padding: 1px 6px; border-radius: 3px; font-size: 9px; }
+.sev-high { background: rgba(239,68,68,0.2); color: var(--red); }
+.sev-medium { background: rgba(245,158,11,0.2); color: var(--amber); }
+.sev-low { background: rgba(100,116,139,0.2); color: var(--text-dim); }

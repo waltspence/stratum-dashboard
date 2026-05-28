@@ -2,11 +2,15 @@ module Api
   module V1
     class AgentsController < ApplicationController
       def index
-        render json: [
-          { id: 1, name: "coordinator", model: "deepseek-v4-pro", provider: "deepseek", status: "active", task: "daily briefing" },
-          { id: 2, name: "scout", model: "deepseek-v4-flash", provider: "deepseek", status: "idle", task: nil },
-          { id: 3, name: "hsr-reviewer", model: "gemini-2.5-flash-lite", provider: "gemini", status: "active", task: "audit running" }
-        ]
+        render json: JSON.parse(stratum_bridge("agents"))
+      rescue => e
+        render json: [{ id: 0, name: "error", model: e.message, provider: "bridge", status: "error", task: nil }]
+      end
+
+      private
+
+      def stratum_bridge(cmd)
+        `python3 #{ENV['HOME']}/stratum/scripts/bridge.py #{cmd}`
       end
     end
   end
