@@ -174,3 +174,8 @@ Processing by Api::V1::AgentsController#index as */*
 Completed 200 OK in 329ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/api/v1/agents" for 127.0.0.1 at 2026-05-28 13:56:14 -0400
+Processing by Api::V1::AgentsController#index as */*
+Completed 200 OK in 88ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
